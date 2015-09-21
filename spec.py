@@ -27,15 +27,6 @@ class expect(unittest.TestCase):
     def runTest(self):
         pass
 
-class ItFunctionWrapper(unittest.TestCase):
-
-    def __init__(self, it_function):
-        self.it_function = it_function
-        unittest.TestCase.__init__(self)
-
-    def runTest(self):
-        self.it_function()
-
 
 class Spec(unittest.TestCase):
 
